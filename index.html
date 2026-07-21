@@ -5,49 +5,34 @@
     <title>Пори року</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             text-align: center;
-            padding: 30px;
             background-color: #ffe8d6;
         }
 
-        .card {
-            background-color: white;
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 15px;
-        }
-
         img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin: 15px 0;
+            width: 300px;
+            height: 200px;
         }
 
         button {
-            padding: 10px;
-            margin: 3px;
-            font-size: 15px;
-            cursor: pointer;
+            padding: 8px 12px;
+            margin: 5px;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1 id="title">Літо ☀️</h1>
-        <p id="text">Літо — це найтепліша пора року з найдовшими днями та яскравим сонцем. Час відпочинку, пригод та розквіту природи.</p>
-        <img id="image" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Пора року">
+    <h1 id="title">Літо ☀️</h1>
+    <p id="text">Літо — це найтепліша пора року з найдовшими днями та яскравим сонцем. Час відпочинку, пригод та розквіту природи.</p>
+    <img id="image" src="https://picsum.photos/id/1057/300/200" alt="Пора року">
 
-        <div>
-            <button onclick="showSpring()">🌷 Весна</button>
-            <button onclick="showSummer()">☀️ Літо</button>
-            <button onclick="showAutumn()">🍁 Осінь</button>
-            <button onclick="showWinter()">❄️ Зима</button>
-        </div>
+    <div>
+        <button onclick="showSpring()">🌷 Весна</button>
+        <button onclick="showSummer()">☀️ Літо</button>
+        <button onclick="showAutumn()">🍁 Осінь</button>
+        <button onclick="showWinter()">❄️ Зима</button>
     </div>
 
     <script>
@@ -58,7 +43,7 @@
 
             titleElement.innerText = "Весна 🌷";
             textElement.innerText = "Весна — це час оновлення та пробудження природи. На деревах з'являються бруньки, а навколо розквітають перші квіти.";
-            imageElement.src = "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600";
+            imageElement.src = "https://picsum.photos/id/152/300/200";
             document.body.style.backgroundColor = "#ffe3ed";
         }
 
@@ -69,7 +54,7 @@
 
             titleElement.innerText = "Літо ☀️";
             textElement.innerText = "Літо — це найтепліша пора року з найдовшими днями та яскравим сонцем. Час відпочинку, пригод та розквіту природи.";
-            imageElement.src = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600";
+            imageElement.src = "https://picsum.photos/id/1057/300/200";
             document.body.style.backgroundColor = "#ffe8d6";
         }
 
@@ -80,7 +65,8 @@
 
             titleElement.innerText = "Осінь 🍁";
             textElement.innerText = "Осінь приносить із собою золотаві барви та прохолодні дні. Дерева скидають пожовкле листя, створюючи неймовірні пейзажі.";
-            imageElement.src = "https://images.unsplash.com/photo-1507181179465-450597373464?w=600";
+            // Нова надійна картинка для осені
+            imageElement.src = "https://picsum.photos/id/106/300/200";
             document.body.style.backgroundColor = "#f0e6d2";
         }
 
@@ -91,11 +77,10 @@
 
             titleElement.innerText = "Зима ❄️";
             textElement.innerText = "Зима чарує пухнастим снігом, морозними візерунками на вікнах та затишними вечорами. Природа відпочиває під білою ковдрою.";
-            imageElement.src = "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?w=600";
+            imageElement.src = "https://picsum.photos/id/1036/300/200";
             document.body.style.backgroundColor = "#ebd9fc";
         }
     </script>
 
 </body>
 </html>
-
